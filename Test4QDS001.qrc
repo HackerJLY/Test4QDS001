@@ -1,0 +1,22 @@
+<RCC>
+    <qresource>
+        <file>qtquickcontrols2.conf</file>
+        <file>Test4QDS001.qmlproject</file>
+        <file>Test4QDS001/Constants.qml</file>
+        <file>Test4QDS001/EventListModel.qml</file>
+        <file>Test4QDS001/EventListSimulator.qml</file>
+        <file>Test4QDS001/qmldir</file>
+        <file>Test4QDS001Content/App.qml</file>
+        <file>Test4QDS001Content/images/btn_bg_disabled.png</file>
+        <file>Test4QDS001Content/images/btn_bg_hover.png</file>
+        <file>Test4QDS001Content/images/btn_bg_normal.png</file>
+        <file>Test4QDS001Content/images/btn_bg_push.png</file>
+        <file>Test4QDS001Content/images/btnClose.png</file>
+        <file>Test4QDS001Content/Log.js</file>
+        <file>Test4QDS001Content/Screen01.ui.qml</file>
+        <file>Test4QDS001Content/Screen02.qml</file>
+        <file>Test4QDS001Content/Screen02Form.ui.qml</file>
+        <file>Test4QDS001Content/Toast.qml</file>
+        <file>Test4QDS001Content/ToastForm.ui.qml</file>
+    </qresource>
+</RCC>
