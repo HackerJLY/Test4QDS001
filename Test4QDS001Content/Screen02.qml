@@ -16,7 +16,7 @@ Screen02Form {
     btnTest.onClicked: {
         Log.log(`btnTest Pressed`)
 
-        Toast.show(parent, tr("你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？"), 1500);
+        Toast.show(parent, qsTr("你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？"), 1500);
     }
 
     imageBg_btnTest.source:
