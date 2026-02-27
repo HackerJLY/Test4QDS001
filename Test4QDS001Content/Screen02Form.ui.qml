@@ -16,6 +16,7 @@ Rectangle {
     width: Constants.width
     height: Constants.height
     color: "#131212"
+    property alias labelCurrentValue: labelCurrentValue
     property alias rectangleTitleBar: rectangleTitleBar
     property alias mouseAreaInTitleBar: mouseAreaInTitleBar
     property alias labelTitle: labelTitle
@@ -102,5 +103,14 @@ Rectangle {
                 source: "images/btnClose.png"
             }
         }
+    }
+
+    Label {
+        id: labelCurrentValue
+        x: 592
+        y: 462
+        width: 108
+        height: 18
+        text: qsTr("当前值：1")
     }
 }

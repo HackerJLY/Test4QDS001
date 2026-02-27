@@ -3,6 +3,8 @@ import "Log.js" as Log
 
 Screen02Form {
 
+    labelCurrentValue.text: qsTr("当前值: ") + counter.value
+
     mouseAreaInTitleBar.onPressed: {
         // 这里的 rectangleRoot 是 UI 文件里的根节点 ID
         Window.window.startSystemMove();
@@ -15,6 +17,8 @@ Screen02Form {
 
     btnTest.onClicked: {
         Log.log(`btnTest Pressed`)
+
+        counter.increment()
 
         Toast.show(parent, qsTr("你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？"), 1500);
     }

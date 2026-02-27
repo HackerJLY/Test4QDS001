@@ -3,15 +3,34 @@
 
 #include <QApplication>
 #include <QQmlApplicationEngine>
+#include <QQmlContext>
 
 #include "autogen/environment.h"
+#include "Counter.h"
 
 int main(int argc, char *argv[])
 {
     set_qt_environment();
     QApplication app(argc, argv);
 
+#if 0
+    // 注册成 QML 类型
+    qmlRegisterType<Counter>("Backend", 1, 0, "Counter");
+#endif
+
     QQmlApplicationEngine engine;
+
+#if 1
+    // C++ 创建对象
+    Counter counter;
+
+    // 把对象暴露给 QML
+    engine.rootContext()->setContextProperty(
+        "counter",   // QML 里访问的名字
+        &counter
+        );
+#endif
+
     const QUrl url(mainQmlFile);
     QObject::connect(
                 &engine, &QQmlApplicationEngine::objectCreated, &app,
