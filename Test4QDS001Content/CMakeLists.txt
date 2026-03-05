@@ -20,6 +20,8 @@ qt6_add_qml_module(Test4QDS001Content
         "Screen02Form.ui.qml"
         "Toast.qml"
         "ToastForm.ui.qml"
+        "ShareCodeForm.ui.qml"
+        "ShareCode.qml"
     RESOURCES
         "Log.js"
         "images/btn_bg_disabled.png"

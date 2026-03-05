@@ -15,12 +15,18 @@ Screen02Form {
         implicitHeight: 30
     }
 
+    ShareCode {
+        id: shareDialog
+    }
+
     btnTest.onClicked: {
         Log.log(`btnTest Pressed`)
 
         counter.increment()
 
         Toast.show(parent, qsTr("你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？"), 1500);
+
+        shareDialog.openWithCode("DP2Sr8wR")
     }
 
     imageBg_btnTest.source:
