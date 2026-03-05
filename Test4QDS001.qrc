@@ -13,9 +13,12 @@
         <file>Test4QDS001Content/images/btn_bg_push.png</file>
         <file>Test4QDS001Content/images/btnClose.png</file>
         <file>Test4QDS001Content/Log.js</file>
+        <file>Test4QDS001Content/qmldir</file>
         <file>Test4QDS001Content/Screen01.ui.qml</file>
         <file>Test4QDS001Content/Screen02.qml</file>
         <file>Test4QDS001Content/Screen02Form.ui.qml</file>
+        <file>Test4QDS001Content/ShareCode.qml</file>
+        <file>Test4QDS001Content/ShareCodeForm.ui.qml</file>
         <file>Test4QDS001Content/Toast.qml</file>
         <file>Test4QDS001Content/ToastForm.ui.qml</file>
     </qresource>
