@@ -10,13 +10,20 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
-Rectangle {
+Item {
     width: 392
     height: 216
     property alias textFieldShareCode: textFieldShareCode
     property alias btnCancel: btnCancel
     property alias labelTitle: labelTitle
     property alias btnCopy: btnCopy
+
+    Image {
+        id: bgImage
+        anchors.fill: parent
+        source: "images/bg.dialog.png"
+        fillMode: Image.Stretch
+    }
 
     ColumnLayout {
         id: columnLayout

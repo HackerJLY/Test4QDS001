@@ -13,16 +13,11 @@ Dialog {
     // 设置遮罩层颜色
     Overlay.modal: Rectangle {
         color: "#33000000"
-        radius: 10
+        //radius: 10
     }
 
-    // Dialog 背景 + 圆角
-    background: Rectangle {
-        color: "white"       // Dialog 背景色
-        radius: 12           // 圆角半径
-        border.color: "#c0c0c0"
-        border.width: 1
-    }
+    // 关键：取消 Dialog 自带背景
+    background: Item { } // 空 Item 或者透明
 
     // 居中父窗口
     anchors.centerIn: parent

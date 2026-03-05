@@ -7,6 +7,7 @@
         <file>Test4QDS001/EventListSimulator.qml</file>
         <file>Test4QDS001/qmldir</file>
         <file>Test4QDS001Content/App.qml</file>
+        <file>Test4QDS001Content/images/bg.dialog.png</file>
         <file>Test4QDS001Content/images/btn_bg_disabled.png</file>
         <file>Test4QDS001Content/images/btn_bg_hover.png</file>
         <file>Test4QDS001Content/images/btn_bg_normal.png</file>
