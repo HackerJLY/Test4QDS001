@@ -46,7 +46,7 @@ Item {
                 color: "#131212"
                 text: qsTr("Share Code")
                 horizontalAlignment: Text.AlignHCenter
-                font.pointSize: 14
+                font.pointSize: 16
             }
         }
 
@@ -71,6 +71,8 @@ Item {
                 color: "#8c8c8c"
                 text: "DP2Sr8wR"
                 horizontalAlignment: Text.AlignHCenter
+                Layout.rightMargin: 10
+                Layout.leftMargin: 10
                 Layout.fillHeight: true
                 readOnly: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
