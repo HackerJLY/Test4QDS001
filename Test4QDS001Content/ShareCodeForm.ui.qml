@@ -27,10 +27,10 @@ Item {
 
     ColumnLayout {
         id: columnLayout
-        x: 8
+        x: 13
         y: 13
-        width: 376
-        height: 195
+        width: 366
+        height: 190
         spacing: 20
 
         RowLayout {
