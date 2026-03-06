@@ -56,7 +56,7 @@ Screen02Form {
 
         messageBox.show(
             "提示",
-            "是否退出应用?",
+            "是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?",
             messageBox.yesNo,
             function(result){
                 if(result === messageBox.resultYes){
