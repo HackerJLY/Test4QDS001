@@ -54,7 +54,18 @@ Screen02Form {
 
         //messageBox.show(qsTr("提示"), qsTr("操作完成"), messageBox.ok)
 
-        messageBox.show(qsTr("提示"), qsTr("你还好吗？"), messageBox.yesNo)
+        messageBox.show(
+            "提示",
+            "是否退出应用?",
+            messageBox.yesNo,
+            function(result){
+                if(result === messageBox.resultYes){
+                    console.log("确认退出")
+                } else {
+                    console.log("取消退出")
+                }
+            }
+        )
     }
 
     imageBg_btnTest.source:

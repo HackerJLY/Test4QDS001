@@ -27,12 +27,14 @@ Dialog {
     readonly property int resultYes: 3
     readonly property int resultNo: 4
 
+    // 临时保存回调
+    property var _callback: null
+
     Overlay.modal: Rectangle {
         color: "#33000000"
     }
 
     background: Item {}
-
     anchors.centerIn: Overlay.overlay
 
     contentItem: MessageBoxForm {
@@ -44,22 +46,26 @@ Dialog {
 
         btnCancel.onClicked: {
             dialog.close()
-            dialog.finished(dialog.resultCancel)
+            finished(resultCancel)
+            if(_callback) _callback(resultCancel)
         }
 
         btnOK.onClicked: {
             dialog.close()
-            dialog.finished(dialog.resultOk)
+            finished(resultOk)
+            if(_callback) _callback(resultOk)
         }
 
         btnYes.onClicked: {
             dialog.close()
-            dialog.finished(dialog.resultYes)
+            finished(resultYes)
+            if(_callback) _callback(resultYes)
         }
 
         btnNo.onClicked: {
             dialog.close()
-            dialog.finished(dialog.resultNo)
+            finished(resultNo)
+            if(_callback) _callback(resultNo)
         }
     }
 
@@ -71,34 +77,27 @@ Dialog {
         form.btnYes.visible = false
         form.btnNo.visible = false
 
-        if (type === ok)
-        {
+        if (type === ok) {
             form.btnOK.visible = true
-        }
-        else if (type === okCancel)
-        {
+        } else if (type === okCancel) {
             form.btnOK.visible = true
             form.btnCancel.visible = true
-        }
-        else if (type === yesNo)
-        {
+        } else if (type === yesNo) {
             form.btnYes.visible = true
             form.btnNo.visible = true
-        }
-        else if (type === yesNoCancel)
-        {
+        } else if (type === yesNoCancel) {
             form.btnYes.visible = true
             form.btnNo.visible = true
             form.btnCancel.visible = true
         }
     }
 
-    // 打开 MessageBox
-    function show(title, text, buttons)
-    {
+    // 打开 MessageBox，支持回调
+    function show(title, text, buttons, callback) {
         dialog.messageTitle = title
         dialog.messageText = text
         setButtons(buttons)
+        dialog._callback = callback || null
         dialog.open()
     }
 }
