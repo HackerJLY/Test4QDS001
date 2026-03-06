@@ -15,6 +15,8 @@ qt6_add_qml_module(Test4QDS001Content
     RESOURCE_PREFIX "/qt/qml"
     QML_FILES
         "App.qml"
+        "MessageBox.qml"
+        "MessageBoxForm.ui.qml"
         "Screen01.ui.qml"
         "Screen02.qml"
         "Screen02Form.ui.qml"
@@ -22,8 +24,6 @@ qt6_add_qml_module(Test4QDS001Content
         "ShareCodeForm.ui.qml"
         "Toast.qml"
         "ToastForm.ui.qml"
-        "MessageBox.qml"
-        "MessageBoxForm.ui.qml"
     RESOURCES
         "Log.js"
         "images/bg.dialog.png"

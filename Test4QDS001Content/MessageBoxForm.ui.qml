@@ -20,8 +20,6 @@ Item {
     property alias labelContent: labelContent
     property alias labelTitle: labelTitle
 
-    property alias button: button
-
     Image {
         id: bgImage
         anchors.fill: parent
@@ -91,31 +89,6 @@ Item {
                 Layout.fillWidth: true
             }
 
-            // Cancel 按钮
-            Button {
-                id: btnCancel
-                text: qsTr("Cancel")
-                flat: false
-                font.pixelSize: 14
-                Layout.preferredWidth: 100
-                Layout.preferredHeight: 40
-
-                // 背景自定义
-                background: Rectangle {
-                    color: "#e0e0e0" // 浅灰背景
-                    radius: 8 // 圆角
-                    border.color: "#c0c0c0"
-                    border.width: 1
-                }
-
-                contentItem: Text {
-                    text: btnCancel.text
-                    color: "#4a4a4a" // 深灰文字
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-            }
-
             // OK 按钮
             Button {
                 id: btnOK
@@ -133,6 +106,30 @@ Item {
 
                 contentItem: Text {
                     text: btnOK.text
+                    color: "#ffffff" // 白色文字
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
+            }
+
+            // Yes 按钮
+            Button {
+                id: btnYes
+                text: qsTr("Yes")
+                flat: false
+                font.pixelSize: 14
+                Layout.preferredWidth: 100
+                Layout.preferredHeight: 40
+                visible: false
+
+                // 背景自定义
+                background: Rectangle {
+                    color: "#000000" // 黑色背景
+                    radius: 8 // 圆角
+                }
+
+                contentItem: Text {
+                    text: btnYes.text
                     color: "#ffffff" // 白色文字
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
@@ -165,25 +162,26 @@ Item {
                 }
             }
 
-            // Yes 按钮
+            // Cancel 按钮
             Button {
-                id: btnYes
-                text: qsTr("Yes")
+                id: btnCancel
+                text: qsTr("Cancel")
                 flat: false
                 font.pixelSize: 14
                 Layout.preferredWidth: 100
                 Layout.preferredHeight: 40
-                visible: false
 
                 // 背景自定义
                 background: Rectangle {
-                    color: "#000000" // 黑色背景
+                    color: "#e0e0e0" // 浅灰背景
                     radius: 8 // 圆角
+                    border.color: "#c0c0c0"
+                    border.width: 1
                 }
 
                 contentItem: Text {
-                    text: btnYes.text
-                    color: "#ffffff" // 白色文字
+                    text: btnCancel.text
+                    color: "#4a4a4a" // 深灰文字
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                 }
