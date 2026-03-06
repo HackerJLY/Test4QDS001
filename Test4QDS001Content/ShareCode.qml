@@ -20,7 +20,8 @@ Dialog {
     background: Item { } // 空 Item 或者透明
 
     // 居中父窗口
-    anchors.centerIn: parent
+    //anchors.centerIn: parent
+    anchors.centerIn: Overlay.overlay
 
     contentItem: ShareCodeForm {
         id: form
