@@ -9,11 +9,11 @@ Dialog {
     modal: true
     focus: true
 
-    property string title: "Prompt"
-    property string text: ""
+    property string messageTitle: "Prompt"
+    property string messageText: ""
 
     // 返回结果
-    signal result(int code)
+    signal finished(int code)
 
     // 按钮类型
     readonly property int ok: 0
@@ -39,8 +39,8 @@ Dialog {
         id: form
         anchors.fill: parent
 
-        labelTitle.text: dialog.title
-        labelContent.text: dialog.text
+        labelTitle.text: dialog.messageTitle
+        labelContent.text: dialog.messageText
 
         btnCancel.onClicked: {
             dialog.close()
@@ -96,8 +96,8 @@ Dialog {
     // 打开 MessageBox
     function show(title, text, buttons)
     {
-        dialog.title = title
-        dialog.text = text
+        dialog.messageTitle = title
+        dialog.messageText = text
         setButtons(buttons)
         dialog.open()
     }

@@ -19,6 +19,30 @@ Screen02Form {
         id: shareDialog
     }
 
+    MessageBox {
+        id: messageBox
+
+        onFinished: function(code)
+        {
+            if(code === messageBox.resultOk)
+            {
+                console.log("用户点击 OK")
+            }
+            else if(code === messageBox.resultCancel)
+            {
+                console.log("用户点击 Cancel")
+            }
+            else if(code === messageBox.resultYes)
+            {
+                console.log("用户点击 Yes")
+            }
+            else if(code === messageBox.resultNo)
+            {
+                console.log("用户点击 No")
+            }
+        }
+    }
+
     btnTest.onClicked: {
         Log.log(`btnTest Pressed`)
 
@@ -26,7 +50,9 @@ Screen02Form {
 
         Toast.show(parent, qsTr("你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？"), 1500);
 
-        shareDialog.openWithCode("DP2Sr8wR")
+        //shareDialog.openWithCode("DP2Sr8wR")
+
+        messageBox.show(qsTr("提示"), qsTr("操作完成"), messageBox.Ok)
     }
 
     imageBg_btnTest.source:

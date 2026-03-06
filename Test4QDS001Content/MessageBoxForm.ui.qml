@@ -53,6 +53,8 @@ Item {
         }
 
         Item {
+            Layout.fillWidth: true
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             Layout.fillHeight: true
         }
 
@@ -60,13 +62,16 @@ Item {
             id: rowLayout1
 
             width: parent.width
+            Layout.fillWidth: true
+            Layout.fillHeight: true
 
             Label {
                 id: labelContent
-                height: 100
+                height: 60
                 color: "#464a53"
                 text: "Delete this file?"
                 wrapMode: Text.WordWrap
+                Layout.fillHeight: true
                 Layout.fillWidth: true
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
@@ -74,6 +79,8 @@ Item {
         }
 
         Item {
+            Layout.fillWidth: true
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             Layout.fillHeight: true
         }
 
