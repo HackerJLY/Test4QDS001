@@ -71,6 +71,7 @@ Item {
                 color: "#8c8c8c"
                 text: "DP2Sr8wR"
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 Layout.rightMargin: 10
                 Layout.leftMargin: 10
                 Layout.fillHeight: true
