@@ -52,7 +52,9 @@ Screen02Form {
 
         //shareDialog.openWithCode("DP2Sr8wR")
 
-        messageBox.show(qsTr("提示"), qsTr("操作完成"), messageBox.ok)
+        //messageBox.show(qsTr("提示"), qsTr("操作完成"), messageBox.ok)
+
+        messageBox.show(qsTr("提示"), qsTr("你还好吗？"), messageBox.yesNo)
     }
 
     imageBg_btnTest.source:

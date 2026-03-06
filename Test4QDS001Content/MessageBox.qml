@@ -44,22 +44,22 @@ Dialog {
 
         btnCancel.onClicked: {
             dialog.close()
-            dialog.result(dialog.resultCancel)
+            dialog.finished(dialog.resultCancel)
         }
 
         btnOK.onClicked: {
             dialog.close()
-            dialog.result(dialog.resultOk)
+            dialog.finished(dialog.resultOk)
         }
 
         btnYes.onClicked: {
             dialog.close()
-            dialog.result(dialog.resultYes)
+            dialog.finished(dialog.resultYes)
         }
 
         btnNo.onClicked: {
             dialog.close()
-            dialog.result(dialog.resultNo)
+            dialog.finished(dialog.resultNo)
         }
     }
 
