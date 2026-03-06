@@ -22,6 +22,8 @@ qt6_add_qml_module(Test4QDS001Content
         "ShareCodeForm.ui.qml"
         "Toast.qml"
         "ToastForm.ui.qml"
+        "MessageBox.qml"
+        "MessageBoxForm.ui.qml"
     RESOURCES
         "Log.js"
         "images/bg.dialog.png"

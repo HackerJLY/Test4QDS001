@@ -14,6 +14,8 @@
         <file>Test4QDS001Content/images/btn_bg_push.png</file>
         <file>Test4QDS001Content/images/btnClose.png</file>
         <file>Test4QDS001Content/Log.js</file>
+        <file>Test4QDS001Content/MessageBox.qml</file>
+        <file>Test4QDS001Content/MessageBoxForm.ui.qml</file>
         <file>Test4QDS001Content/qmldir</file>
         <file>Test4QDS001Content/Screen01.ui.qml</file>
         <file>Test4QDS001Content/Screen02.qml</file>
