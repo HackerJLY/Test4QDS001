@@ -15,6 +15,8 @@ qt6_add_qml_module(Test4QDS001Content
     RESOURCE_PREFIX "/qt/qml"
     QML_FILES
         "App.qml"
+        "InputBox.qml"
+        "InputBoxForm.ui.qml"
         "MessageBox.qml"
         "MessageBoxForm.ui.qml"
         "Screen01.ui.qml"
@@ -32,6 +34,14 @@ qt6_add_qml_module(Test4QDS001Content
         "images/btn_bg_normal.png"
         "images/btn_bg_push.png"
         "images/btnClose.png"
+        "images/PasswordHide.Click.png"
+        "images/PasswordHide.Disabled.png"
+        "images/PasswordHide.Hover.png"
+        "images/PasswordHide.Normal.png"
+        "images/PasswordShow.Click.png"
+        "images/PasswordShow.Disabled.png"
+        "images/PasswordShow.Hover.png"
+        "images/PasswordShow.Normal.png"
 )
 
 
