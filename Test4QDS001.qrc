@@ -13,6 +13,16 @@
         <file>Test4QDS001Content/images/btn_bg_normal.png</file>
         <file>Test4QDS001Content/images/btn_bg_push.png</file>
         <file>Test4QDS001Content/images/btnClose.png</file>
+        <file>Test4QDS001Content/images/PasswordHide.Click.png</file>
+        <file>Test4QDS001Content/images/PasswordHide.Disabled.png</file>
+        <file>Test4QDS001Content/images/PasswordHide.Hover.png</file>
+        <file>Test4QDS001Content/images/PasswordHide.Normal.png</file>
+        <file>Test4QDS001Content/images/PasswordShow.Click.png</file>
+        <file>Test4QDS001Content/images/PasswordShow.Disabled.png</file>
+        <file>Test4QDS001Content/images/PasswordShow.Hover.png</file>
+        <file>Test4QDS001Content/images/PasswordShow.Normal.png</file>
+        <file>Test4QDS001Content/InputBox.qml</file>
+        <file>Test4QDS001Content/InputBoxForm.ui.qml</file>
         <file>Test4QDS001Content/Log.js</file>
         <file>Test4QDS001Content/MessageBox.qml</file>
         <file>Test4QDS001Content/MessageBoxForm.ui.qml</file>
