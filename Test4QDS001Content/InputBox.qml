@@ -65,22 +65,22 @@ Dialog {
             fillMode: Image.PreserveAspectFit
 
             source: {
-                if (!checkBoxPassword.enabled)
-                    return checkBoxPassword.checked ?
+                if (!form.checkBoxPassword.enabled)
+                    return form.checkBoxPassword.checked ?
                            "images/PasswordShow.Disabled.png" :
                            "images/PasswordHide.Disabled.png"
 
-                if (checkBoxPassword.pressed)
-                    return checkBoxPassword.checked ?
+                if (form.checkBoxPassword.pressed)
+                    return form.checkBoxPassword.checked ?
                            "images/PasswordShow.Click.png" :
                            "images/PasswordHide.Click.png"
 
-                if (checkBoxPassword.hovered)
-                    return checkBoxPassword.checked ?
+                if (form.checkBoxPassword.hovered)
+                    return form.checkBoxPassword.checked ?
                            "images/PasswordShow.Hover.png" :
                            "images/PasswordHide.Hover.png"
 
-                return checkBoxPassword.checked ?
+                return form.checkBoxPassword.checked ?
                        "images/PasswordShow.Normal.png" :
                        "images/PasswordHide.Normal.png"
             }
@@ -99,6 +99,15 @@ Dialog {
         passwordMode = password || false
 
         _callback = callback || null
+
+        // ✅ 重置 UI
+        form.labelTitle.text = inputTitle
+        form.labelTips.text  = inputTips
+        form.textFieldInput.text = inputText
+
+        // 重置密码框状态
+        if (passwordMode)
+            form.checkBoxPassword.checked = false
 
         open()
     }

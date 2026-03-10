@@ -72,10 +72,10 @@ Screen02Form {
         // )
 
         inputBox.show(
-            "Input Password",
+            "提示",
             "请输入登录密码",
-            "",
-            false,
+            "123",
+            true,
             function(ok, text) {
 
                 if (ok) {
