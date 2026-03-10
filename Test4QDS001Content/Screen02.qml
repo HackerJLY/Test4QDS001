@@ -43,6 +43,10 @@ Screen02Form {
         }
     }
 
+    InputBox {
+        id: inputBox
+    }
+
     btnTest.onClicked: {
         Log.log(`btnTest Pressed`)
 
@@ -54,16 +58,32 @@ Screen02Form {
 
         //messageBox.show(qsTr("提示"), qsTr("操作完成"), messageBox.ok)
 
-        messageBox.show(
-            "提示",
-            "是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?",
-            messageBox.yesNo,
-            function(result){
-                if(result === messageBox.resultYes){
-                    console.log("确认退出")
+        // messageBox.show(
+        //     "提示",
+        //     "是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?",
+        //     messageBox.yesNo,
+        //     function(result){
+        //         if(result === messageBox.resultYes){
+        //             console.log("确认退出")
+        //         } else {
+        //             console.log("取消退出")
+        //         }
+        //     }
+        // )
+
+        inputBox.show(
+            "Input Password",
+            "请输入登录密码",
+            "",
+            true,
+            function(ok, text) {
+
+                if (ok) {
+                    console.log("用户点击 OK:", text)
                 } else {
-                    console.log("取消退出")
+                    console.log("用户取消")
                 }
+
             }
         )
     }

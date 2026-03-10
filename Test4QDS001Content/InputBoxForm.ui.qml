@@ -18,7 +18,6 @@ Item {
     property alias checkBoxPassword: checkBoxPassword
     property alias btnOK: btnOK
     property alias btnCancel: btnCancel
-    property alias labelContent: labelContent
     property alias labelTitle: labelTitle
 
     Image {
@@ -164,10 +163,6 @@ Item {
                     verticalAlignment: Text.AlignVCenter
                 }
             }
-
-            // Yes 按钮
-
-            // No 按钮
 
             // Cancel 按钮
             Button {
