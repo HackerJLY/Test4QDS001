@@ -29,10 +29,8 @@ Item {
 
     ColumnLayout {
         id: columnLayout
-        x: 13
-        y: 13
-        width: 366
-        height: 190
+        anchors.fill: parent
+        anchors.margins: 13
         spacing: 1
 
         RowLayout {
@@ -61,13 +59,11 @@ Item {
         RowLayout {
             id: rowLayout1
 
-            width: parent.width
             Layout.fillWidth: true
             Layout.fillHeight: true
 
             Label {
                 id: labelTips
-                height: 60
                 color: "#464a53"
                 text: "Input password"
                 wrapMode: Text.WordWrap
@@ -87,14 +83,11 @@ Item {
         RowLayout {
             id: rowLayout2
 
-            width: parent.width
             Layout.fillWidth: true
             Layout.fillHeight: true
 
             TextField {
                 id: textFieldInput
-                width: 136
-                height: 56
                 text: "123456"
                 Layout.fillHeight: false
                 Layout.fillWidth: true
@@ -113,8 +106,6 @@ Item {
 
             CheckBox {
                 id: checkBoxPassword
-                width: 30
-                height: 30
                 text: ""
                 icon.height: 30
                 icon.width: 30
@@ -131,9 +122,7 @@ Item {
 
         RowLayout {
             id: rowLayout3
-            x: 0
-            y: 8
-            width: parent.width
+            Layout.fillWidth: true
             height: 55
             spacing: 30
 

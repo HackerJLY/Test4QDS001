@@ -75,7 +75,7 @@ Screen02Form {
             "Input Password",
             "请输入登录密码",
             "",
-            true,
+            false,
             function(ok, text) {
 
                 if (ok) {
