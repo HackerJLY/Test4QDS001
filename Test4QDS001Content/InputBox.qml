@@ -32,6 +32,13 @@ Dialog {
     contentItem: InputBoxForm {
         id: form
 
+
+        RegularExpressionValidator {
+            id: passwordValidator
+            regularExpression: /^[A-Za-z0-9~!@#$%^&*()_\-+=\[\]{}|;:'",.<>/?\\]*$/
+        }
+
+        textFieldInput.validator: dialog.passwordMode ? passwordValidator : null
         // ===== UI绑定 =====
         labelTitle.text: dialog.inputTitle
         labelTips.text: dialog.inputTips
