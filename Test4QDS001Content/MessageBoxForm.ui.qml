@@ -11,8 +11,14 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 Item {
-    width: 400
-    height: 216
+    //width: 391
+    //height: 214
+    implicitWidth: 391
+    implicitHeight: 214
+    Layout.preferredHeight: 391
+    Layout.preferredWidth: 214
+    anchors.fill: parent
+
     property alias btnYes: btnYes
     property alias btnNo: btnNo
     property alias btnOK: btnOK
@@ -29,11 +35,9 @@ Item {
 
     ColumnLayout {
         id: columnLayout
-        x: 13
-        y: 13
-        width: 366
-        height: 190
-        spacing: 1
+        anchors.fill: parent
+        anchors.margins: 18
+        spacing: 5
 
         RowLayout {
             id: rowLayout

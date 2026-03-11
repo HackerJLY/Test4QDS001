@@ -4,11 +4,11 @@ import QtQuick.Controls
 Dialog {
     id: dialog
 
-    width: 400
-    height: 216
+    width: 391
+    height: 214
 
-    implicitWidth: 400
-    implicitHeight: 216
+    implicitWidth: 391
+    implicitHeight: 214
 
     modal: true
     focus: true

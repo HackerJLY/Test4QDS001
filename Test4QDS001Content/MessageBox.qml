@@ -3,8 +3,8 @@ import QtQuick.Controls
 
 Dialog {
     id: dialog
-    width: 392
-    height: 216
+    width: 391
+    height: 214
 
     modal: true
     focus: true
