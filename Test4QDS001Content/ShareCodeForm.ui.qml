@@ -55,15 +55,16 @@ Item {
         }
 
         Item {
+            Layout.fillWidth: true
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             Layout.fillHeight: true
         }
 
         RowLayout {
             id: rowLayout1
 
-            y: 8
-            width: parent.width
-            height: 50
+            Layout.fillWidth: true
+            Layout.fillHeight: true
 
             TextField {
                 id: textFieldShareCode
@@ -94,32 +95,36 @@ Item {
         }
 
         Item {
+            Layout.fillWidth: true
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             Layout.fillHeight: true
         }
 
         RowLayout {
             id: rowLayout2
-            x: 0
-            y: 8
-            width: parent.width
-            height: 55
+            Layout.fillWidth: true
+            //Layout.fillHeight: true
             spacing: 30
 
             Item {
                 Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                //Layout.fillHeight: true
             }
 
             // Cancel 按钮
             Button {
                 id: btnCancel
+                height: 32
                 text: qsTr("Cancel")
-                flat: false
+                flat: true
                 font.pixelSize: 14
                 Layout.preferredWidth: 100
-                Layout.preferredHeight: 40
+                Layout.preferredHeight: 32
 
                 // 背景自定义
                 background: Rectangle {
+                    anchors.fill: parent
                     color: "#e0e0e0" // 浅灰背景
                     radius: 8 // 圆角
                     border.color: "#c0c0c0"
@@ -137,14 +142,16 @@ Item {
             // Copy / OK 按钮
             Button {
                 id: btnCopy
+                height: 32
                 text: qsTr("Copy")
-                flat: false
+                flat: true
                 font.pixelSize: 14
                 Layout.preferredWidth: 100
-                Layout.preferredHeight: 40
+                Layout.preferredHeight: 32
 
                 // 背景自定义
                 background: Rectangle {
+                    anchors.fill: parent
                     color: "#000000" // 黑色背景
                     radius: 8 // 圆角
                 }
@@ -159,6 +166,8 @@ Item {
 
             Item {
                 Layout.fillWidth: true
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                //Layout.fillHeight: true
             }
         }
     }
