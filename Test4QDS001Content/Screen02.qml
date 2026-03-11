@@ -58,34 +58,34 @@ Screen02Form {
 
         //messageBox.show(qsTr("提示"), qsTr("操作完成"), messageBox.ok)
 
-        // messageBox.show(
-        //     "提示",
-        //     "是否退出应用?",
-        //     messageBox.yesNo,
-        //     function(result){
-        //         if(result === messageBox.resultYes){
-        //             console.log("确认退出")
-        //         } else {
-        //             console.log("取消退出")
-        //         }
-        //     }
-        // )
-
-        inputBox.show(
+        messageBox.show(
             "提示",
-            "请输入登录密码",
-            "123",
-            true,
-            function(ok, text) {
-
-                if (ok) {
-                    console.log("用户点击 OK:", text)
+            "是否退出应用?",
+            messageBox.yesNo,
+            function(result){
+                if(result === messageBox.resultYes){
+                    console.log("确认退出")
                 } else {
-                    console.log("用户取消")
+                    console.log("取消退出")
                 }
-
             }
         )
+
+        // inputBox.show(
+        //     "提示",
+        //     "请输入登录密码",
+        //     "123",
+        //     true,
+        //     function(ok, text) {
+
+        //         if (ok) {
+        //             console.log("用户点击 OK:", text)
+        //         } else {
+        //             console.log("用户取消")
+        //         }
+
+        //     }
+        // )
     }
 
     imageBg_btnTest.source:
