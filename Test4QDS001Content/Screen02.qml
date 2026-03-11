@@ -52,7 +52,7 @@ Screen02Form {
 
         counter.increment()
 
-        Toast.show(parent, qsTr("你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？你还好吗？"), 1500);
+        Toast.show(parent, qsTr("你还好吗？"), 1500);
 
         //shareDialog.openWithCode("DP2Sr8wR")
 
@@ -60,7 +60,7 @@ Screen02Form {
 
         // messageBox.show(
         //     "提示",
-        //     "是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?是否退出应用?",
+        //     "是否退出应用?",
         //     messageBox.yesNo,
         //     function(result){
         //         if(result === messageBox.resultYes){
