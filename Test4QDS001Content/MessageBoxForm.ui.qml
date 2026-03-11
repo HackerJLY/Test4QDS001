@@ -104,13 +104,14 @@ Item {
             Button {
                 id: btnOK
                 text: qsTr("OK")
-                flat: false
+                flat: true
                 font.pixelSize: 14
                 Layout.preferredWidth: 100
-                Layout.preferredHeight: 40
+                Layout.preferredHeight: 32
 
                 // 背景自定义
                 background: Rectangle {
+                    anchors.fill: parent
                     color: "#000000" // 黑色背景
                     radius: 8 // 圆角
                 }
@@ -127,14 +128,15 @@ Item {
             Button {
                 id: btnYes
                 text: qsTr("Yes")
-                flat: false
+                flat: true
                 font.pixelSize: 14
                 Layout.preferredWidth: 100
-                Layout.preferredHeight: 40
+                Layout.preferredHeight: 32
                 visible: false
 
                 // 背景自定义
                 background: Rectangle {
+                    anchors.fill: parent
                     color: "#000000" // 黑色背景
                     radius: 8 // 圆角
                 }
@@ -151,14 +153,15 @@ Item {
             Button {
                 id: btnNo
                 text: qsTr("No")
-                flat: false
+                flat: true
                 font.pixelSize: 14
                 Layout.preferredWidth: 100
-                Layout.preferredHeight: 40
+                Layout.preferredHeight: 32
                 visible: false
 
                 // 背景自定义
                 background: Rectangle {
+                    anchors.fill: parent
                     color: "#e0e0e0" // 浅灰背景
                     radius: 8 // 圆角
                     border.color: "#c0c0c0"
@@ -177,13 +180,14 @@ Item {
             Button {
                 id: btnCancel
                 text: qsTr("Cancel")
-                flat: false
+                flat: true
                 font.pixelSize: 14
                 Layout.preferredWidth: 100
-                Layout.preferredHeight: 40
+                Layout.preferredHeight: 32
 
                 // 背景自定义
                 background: Rectangle {
+                    anchors.fill: parent
                     color: "#e0e0e0" // 浅灰背景
                     radius: 8 // 圆角
                     border.color: "#c0c0c0"
