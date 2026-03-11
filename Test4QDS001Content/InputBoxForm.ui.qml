@@ -11,8 +11,14 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 Item {
-    width: 400
-    height: 216
+    //width: 400
+    //height: 216
+    implicitWidth: 400
+    implicitHeight: 216
+    Layout.preferredHeight: 400
+    Layout.preferredWidth: 216
+    anchors.fill: parent
+
     property alias labelTips: labelTips
     property alias textFieldInput: textFieldInput
     property alias checkBoxPassword: checkBoxPassword
@@ -106,7 +112,11 @@ Item {
 
             CheckBox {
                 id: checkBoxPassword
+                width: 30
+                height: 30
                 text: ""
+                Layout.preferredHeight: 25
+                Layout.preferredWidth: 25
                 icon.height: 30
                 icon.width: 30
 
