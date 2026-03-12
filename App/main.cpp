@@ -7,11 +7,18 @@
 
 #include "autogen/environment.h"
 #include "Counter.h"
+#include "SingleApplication.h"
+
+#include <QWindow>
 
 int main(int argc, char *argv[])
 {
     set_qt_environment();
-    QApplication app(argc, argv);
+    //QApplication app(argc, argv);
+    SingleApplication app(argc, argv, "Test4QDS001App");
+
+    if (app.isSecondary())
+        return 0;
 
 #if 0
     // 注册成 QML 类型
@@ -45,6 +52,20 @@ int main(int argc, char *argv[])
 
     if (engine.rootObjects().isEmpty())
         return -1;
+
+    QObject *root = engine.rootObjects().first();
+
+    QObject::connect(&app, &SingleApplication::instanceStarted, [&]() {
+
+        QWindow *window = qobject_cast<QWindow*>(root);
+
+        if (window) {
+            window->showNormal();
+            window->raise();
+            window->requestActivate();
+        }
+
+    });
 
     return app.exec();
 }
