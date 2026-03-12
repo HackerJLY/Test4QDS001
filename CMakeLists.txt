@@ -21,6 +21,8 @@ qt_standard_project_setup()
 
 
 qt_add_executable(${CMAKE_PROJECT_NAME}
+    MANUAL_FINALIZATION
+    WIN32
     App/counter.h App/counter.cpp
     App/SingleApplication.cpp App/SingleApplication.h)
 qt_add_resources(${CMAKE_PROJECT_NAME} "configuration"
